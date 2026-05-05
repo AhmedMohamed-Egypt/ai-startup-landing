@@ -4,12 +4,40 @@
   --background: #ffffff;
   --foreground: #171717;
 }
+@layer utilities {
+  .w-85p {
+    width: 85%;
+  }
+}
+@layer base {
+  h1 {
+    @apply font-serif text-[80px] leading-[1.05] tracking-tight;
+  }
+  h1 span.text-gradient-span {
+    background-image: linear-gradient(
+      90deg,
+      #e5d6c0 5%,
+      #d3a6c8 20%,
+      #b57edc 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-archivo);
+  --font-mono: var(--font-mono);
+  --font-serif: var(--font-instrument-serif);
+  --font-manrope: var(--font-manrope), system-ui, sans-serif;
+}
+@theme {
+  --container: 1440px;
+  --content-hero-width: 625px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,9 +46,26 @@
     --foreground: #ededed;
   }
 }
+.shrink-container {
+  width: 85%;
+}
+
+.height-content-hero {
+  height: 75%;
+}
+.pesdu-element::after {
+  content: "";
+  background: linear-gradient(-90deg, #a27fc1, #ebaa4f);
+  border-radius: 25px;
+  width: 102%;
+  height: 110%;
+  position: absolute;
+  bottom: -2px;
+  left: -2px;
+}
+
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
