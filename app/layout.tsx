@@ -38,7 +38,7 @@ export default function RootLayout({
       lang="en"
       className={`${manrope.variable}  ${archivo.variable} ${geistMono.variable} ${instrumentSerif.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-sans">{children}</body>
+      <body className="min-h-full flex flex-col font-sans bg-(--color-bg-primary) h-[4000px]">{children}</body>
     </html>
   );
 }

@@ -1,4 +1,5 @@
 import Hero from './sections/Hero';
+import HumanSection from './sections/HumanSection';
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <div className="container mx-auto">
         
       </div>
+     <HumanSection/>
    
     </main>
   );
