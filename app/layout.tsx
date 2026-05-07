@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Archivo, Geist_Mono, Instrument_Serif ,Manrope } from "next/font/google";
+import { Archivo, Geist_Mono, Instrument_Serif ,Manrope,Inter  } from "next/font/google";
 import "./globals.css";
 
 const archivo = Archivo({
@@ -22,6 +22,11 @@ const manrope = Manrope({
   weight: ["400", "500", "600", "700"],
   variable: "--font-manrope",
 });
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["300","400", "500", "600", "700"],
+  variable: "--font-inter",
+});
 
 export const metadata: Metadata = {
   title: "Ai Start Up",
@@ -36,7 +41,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${manrope.variable}  ${archivo.variable} ${geistMono.variable} ${instrumentSerif.variable} h-full antialiased`}
+      className={`${inter.variable} ${manrope.variable}  ${archivo.variable} ${geistMono.variable} ${instrumentSerif.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col font-sans bg-(--color-bg-primary) h-[4000px]">{children}</body>
     </html>
