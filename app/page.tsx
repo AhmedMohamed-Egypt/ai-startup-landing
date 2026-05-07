@@ -1,6 +1,7 @@
 import Hero from "./sections/Hero";
 import HumanSection from "./sections/HumanSection";
 import PolicySection from "./sections/PolicySection";
+import ProductPolicy from "./sections/ProductPolicy";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <div className="container mx-auto"></div>
       <HumanSection />
       <PolicySection />
+      <ProductPolicy/>
     </main>
   );
 }
