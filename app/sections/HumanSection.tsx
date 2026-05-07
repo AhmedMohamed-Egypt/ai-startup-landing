@@ -14,7 +14,7 @@ export default function HumanSection() {
       <div className="w-(--container) mx-auto">
         <div className="shrink-container-2 mx-auto">
           <div className="flex humanSection__parent">
-            <div className="w-full humanSection__parent--first">
+            <div className="w-full humanSection__parent--first flex items-end flex-col">
               <img src="/Send-email-modal.svg" alt="can send email" />
               <img src="/Support-Chat.svg" alt="can send email" />
             </div>
