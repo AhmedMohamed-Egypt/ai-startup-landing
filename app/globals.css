@@ -88,7 +88,7 @@
 }
 
 @theme inline {
-  --color-bg-primary: #f5f2eb;
+  --color-bg-primary: #f5f2eb94;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-yellow: #f8bc2f;
@@ -98,7 +98,6 @@
   --font-serif: var(--font-instrument-serif);
   --font-manrope: var(--font-manrope), system-ui, sans-serif;
   --font-inter: var(--font-inter), system-ui, sans-serif;
-
   --text-heading3: 40px;
 }
 @theme {
@@ -163,4 +162,21 @@ body {
 }
 .product-policy__headingh2 > p:nth-child(2) span:nth-child(3) {
   background-image: linear-gradient(170deg, #c383b5 50%, #000 100%);
+}
+/*policy product*/
+.product-policy::after {
+  /*// background-image: url("/squid.svg");*/
+}
+.product-policy__rightside--colOne{
+  max-width: 650px;
+}
+.product-policy__rightside--h5 {
+  max-width: 400px;
+}
+
+
+@media (min-width: 1650px) {
+  .product-policy::after {
+    left:15%
+  }
 }
