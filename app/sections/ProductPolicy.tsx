@@ -60,7 +60,7 @@ export default function ProductPolicy() {
             <p className="ml-2 text-base capitalize">How It Works</p>
           </ButtonCta>
         </div>
-        <div className="product-policy__rightside--colTwo">
+        <div className="product-policy__rightside--colTwo hidden">
           <h2 className="headingh2">InPolicy For Humans</h2>
           <h6 className="font-inter font-light text-[1.75] ">
             Nobody wants to feel spied on. InPolicy is designed to be a helpful coach, not a snitch. InPolicy for Humans keeps users compliant before they press “send. How do we do this?
