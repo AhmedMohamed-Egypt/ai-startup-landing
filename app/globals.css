@@ -154,5 +154,13 @@ body {
   background-image: linear-gradient(90deg, #000000 0%, #c383b5 65%);
 }
 .product-policy__headingh2 > p:nth-child(2) span:nth-child(2) {
-  background-image: linear-gradient(90deg, #c383b5 0%, #8e6400 65%);
+  background-image: linear-gradient(
+    90deg,
+    #c88bc7 0%,
+    #c58aae 0%,
+    #b47a7a 100%
+  );
+}
+.product-policy__headingh2 > p:nth-child(2) span:nth-child(3) {
+  background-image: linear-gradient(170deg, #c383b5 50%, #000 100%);
 }
