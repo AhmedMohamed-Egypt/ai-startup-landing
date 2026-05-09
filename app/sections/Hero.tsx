@@ -15,7 +15,7 @@ export default function Hero() {
           <div className="shrink-container mx-auto">
             <h1 className="mb-5">
               <span className="block text-white">The policy layer for</span>
-              <span className="block text-gradient-span">humans and AI</span>
+              <span className="block text-gradient-span common-txt-gradient">humans and AI</span>
             </h1>
             <div className="font-manrope text-white font-medium text-xl max-w-(--content-hero-width)">
               <p className="mb-7">
