@@ -43,7 +43,7 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${manrope.variable}  ${archivo.variable} ${geistMono.variable} ${instrumentSerif.variable} h-full antialiased`}
     >
-      <body className="overflow-x-hidden min-h-full flex flex-col font-sans bg-(--color-bg-primary) h-[8000px]">{children}</body>
+      <body className="overflow-x-hidden min-h-full flex flex-col font-sans bg-(--color-bg-primary) ">{children}</body>
     </html>
   );
 }
