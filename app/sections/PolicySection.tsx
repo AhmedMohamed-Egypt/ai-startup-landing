@@ -2,7 +2,7 @@ import React from 'react'
 import ButtonCta from "../components/buttonCta";
 export default function PolicySection() {
   return (
-    <section className='poilcysection'>
+    <section className='poilcysection pb-[300px]'>
         <div className='w-(--container) mx-auto'>
             <h2 className="headingh2 text-center mb-6">Policy Infrastructure for Enterprise</h2>
             <div className='shrink-container-2 mx-auto'>

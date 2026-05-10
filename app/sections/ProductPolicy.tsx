@@ -5,16 +5,17 @@ export default function ProductPolicy() {
   return (
     <>
       <section
-        className="product-policy overflow-hidden py-112.5 pt-[150px]   relative
+        className="product-policy    relative
     after:content-['']
     after:absolute
-    after:left-[15%]
+    
     after:bottom-0
-    after:w-[100%]
-    after:h-full
+    after:w-full
     after:bg-[url('/validated_svg.svg')]
     after:bg-no-repeat
     after:bg-position-[0% 50%]
+    after:h-347.5
+    after:-z-10
     "
       >
         <div className="w-(--container) mx-auto relative z-50">
@@ -29,8 +30,8 @@ export default function ProductPolicy() {
                 </p>
                 <p>
                   <span className="common-txt-gradient inline-block">
-                    {" "}
-                    One{" "}
+                   
+                    One
                   </span>
                   <span className="common-txt-gradient inline-block py-2">
                     Policy
@@ -60,13 +61,14 @@ export default function ProductPolicy() {
                 </b>
               </h5>
               <ButtonCta
-                classBtn={"mx-auto border-2 !border-black !px-8 !py-[9px] mt-6"}
+                classBtn={"mx-auto !border-[2.4px] !border-black !px-8 !py-[9px] mt-6"}
               >
                 <img src="/arrow-btn.svg" alt="HowItWork" />
                 <p className="ml-2 text-base capitalize">How It Works</p>
               </ButtonCta>
             </div>
-            <div className="product-policy__rightside--colTwo ml-auto text-right mt-50">
+            <div className="px-15">
+                <div className="product-policy__rightside--colTwo ml-auto text-right mt-50">
               <h2 className="headingh2 mb-8">
                 <span className="common-txt-gradient">InPolicy </span>
                 <span className="common-txt-gradient"> For </span>
@@ -77,6 +79,7 @@ export default function ProductPolicy() {
                 helpful coach, not a snitch. InPolicy for Humans keeps users
                 compliant before they press “send. How do we do this?
               </h6>
+            </div>
             </div>
             <div></div>
           </div>
