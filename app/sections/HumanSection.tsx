@@ -25,7 +25,7 @@ export default function HumanSection() {
                   Humans Say the Wrong Thing.
                 </span>
                 <span className="block  py-2 text-right text-gradient-span-2">
-                  <span className="py-1 inline-block">Agents </span>
+                  <span className="py-1 inline-block mr-2">Agents </span>
                   <span>Will </span>
                   <span>Say </span>
                   <span>It </span>

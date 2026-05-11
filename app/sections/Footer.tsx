@@ -3,9 +3,9 @@ import React from "react";
 export default function Footer() {
   return (
     <section className="inpolicy_footer bg-black pt-20 overflow-hidden">
-      <div className="w-(--container) mx-auto px-20">
-        <div className="flex justify-between">
-          <div className="inpolicy_footer--leftside w-[450px]">
+      <div className="w-(--container) mx-auto px-10">
+        <div className="flex justify-between pb-10">
+          <div className="inpolicy_footer--leftside w-[440px]">
             <img width="125" height="42" src="/Logo.svg" alt="logo" />
             <p className="font-inter text-grey mt-6">
               InPolicy turns your policies into active, real-time guardrails. It

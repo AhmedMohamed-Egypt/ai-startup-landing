@@ -82,7 +82,7 @@
   }
   .inpolicy_footer--rightside a,
   .inpolicy_footer--bottomside a {
-    @apply text-grey font-inter font-light text-base mb-5 block;
+    @apply text-grey font-inter font-light text-base mb-7 block;
   }
   .inpolicy_footer--bottomside a {
     @apply text-[14px];
@@ -130,7 +130,7 @@
 }
 
 .height-content-hero {
-  height: 75%;
+  height: 91%;
 }
 .pesdu-element::after {
   content: "";
@@ -145,6 +145,9 @@
 
 body {
   color: var(--foreground);
+}
+.herosection{
+  filter: drop-shadow(0px 135.983px 54.3932px rgba(10, 67, 128, 0.01)) drop-shadow(0px 76.5534px 46.335px rgba(10, 67, 128, 0.05)) drop-shadow(0px 34.2476px 34.2476px rgba(10, 67, 128, 0.09)) drop-shadow(0px 8.05825px 19.1384px rgba(10, 67, 128, 0.05));
 }
 .humanSection__parent--first img:nth-child(2) {
   transform: translate(-120px, -150px);

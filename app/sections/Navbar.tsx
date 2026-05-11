@@ -1,14 +1,16 @@
 // app/sections/Navbar.tsx
 "use client";
 
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import ButtonCta from "../components/buttonCta";
 export default function Navbar() {
+ 
     const pathname = usePathname();
   return (
     <div className="w-(--container) mx-auto">
-    <div className="top-0 left-0 w-full z-20 px-6 py-4">
+    <div className="top-0 left-0 w-full z-20 px-8 py-4">
       <div className="flex items-center">
         <div className="mr-auto">
           <img   width={125} height={"42"} src="/Logo.svg" alt="logo"  />

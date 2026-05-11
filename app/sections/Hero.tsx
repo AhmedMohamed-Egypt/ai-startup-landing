@@ -1,18 +1,38 @@
+"use client";
 import ButtonCta from "../components/buttonCta";
 import Navbar from "./Navbar";
+import { useEffect, useState } from "react";
 
 export default function Hero() {
+     const [scrolled, setScrolled] = useState(false);
+  
+    useEffect(() => {
+      const handleScroll = () => {
+        setScrolled(window.scrollY > 50);
+      };
+  
+      window.addEventListener("scroll", handleScroll);
+  
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, []);
   return (
     <section
-      className="h-screen bg-cover bg-center"
+      className="h-screen bg-cover relative bg-[position:-100%_-200%] herosection"
       style={{ backgroundImage: "url('/Hero-section-bg.png')" }}
     >
-      <div className="relative overflow-hidden bg-black text-white">
+      <div className={` overflow-hidden bg-black text-white  fixed top-0 left-0 w-full z-50 transition-all duration-300
+
+        ${scrolled
+          ? "bg-black backdrop-blur-md z-[999] shadow-lg"
+          : ""
+        }`}>
         <Navbar />
       </div>
       <div className="flex flex-col justify-center height-content-hero">
-        <div className="w-(--container) mx-auto">
-          <div className="shrink-container mx-auto">
+        <div className="w-(--container) mx-auto ">
+          <div className="pl-20">
             <h1 className="mb-5">
               <span className="block text-white">The policy layer for</span>
               <span className="block text-gradient-span common-txt-gradient">humans and AI</span>

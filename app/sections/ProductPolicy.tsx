@@ -8,7 +8,6 @@ export default function ProductPolicy() {
         className="product-policy    relative
     after:content-['']
     after:absolute
-    
     after:bottom-0
     after:w-full
     after:bg-[url('/validated_svg.svg')]
@@ -23,17 +22,17 @@ export default function ProductPolicy() {
             <div className="product-policy__rightside--colOne ml-auto flex flex-col items-center">
               <h2 className="headingh2 product-policy__headingh2 mb-5">
                 <p className="text-center">
-                  <span className="common-txt-gradient inline-block">Two</span>
+                  <span className="common-txt-gradient inline-block mr-2">Two</span>
                   <span className="common-txt-gradient inline-block">
                     Products.
                   </span>
                 </p>
                 <p>
-                  <span className="common-txt-gradient inline-block">
+                  <span className="common-txt-gradient inline-block mr-2">
                    
                     One
                   </span>
-                  <span className="common-txt-gradient inline-block py-2">
+                  <span className="common-txt-gradient inline-block py-2 mr-2">
                     Policy
                   </span>
                   <span className="common-txt-gradient inline-block py-2">
