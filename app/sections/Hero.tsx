@@ -19,7 +19,7 @@ export default function Hero() {
     }, []);
   return (
     <section
-      className="h-screen bg-cover relative bg-[position:-100%_-200%] herosection"
+      className="h-screen bg-cover relative bg-position-[center_50px] herosection"
       style={{ backgroundImage: "url('/Hero-section-bg.png')" }}
     >
       <div className={` overflow-hidden bg-black text-white  fixed top-0 left-0 w-full z-50 transition-all duration-300
