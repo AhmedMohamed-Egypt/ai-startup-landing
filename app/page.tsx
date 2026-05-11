@@ -10,13 +10,15 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <div className="container mx-auto"></div>
-      <HumanSection />
+      
+      <div className="hidden">
+        <HumanSection />
       <PolicySection />
       <ProductPolicy/>
       <PrivateCorrections/>
       <PolicyAgents/>
       <Footer/>
+      </div>
     </main>
   );
 }
