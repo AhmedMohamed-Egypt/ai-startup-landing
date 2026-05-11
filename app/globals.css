@@ -80,6 +80,16 @@
   h2.headingh2 {
     @apply text-6xl font-serif font-normal;
   }
+  .inpolicy_footer--rightside a,
+  .inpolicy_footer--bottomside a {
+    @apply text-grey font-inter font-light text-base mb-5 block;
+  }
+  .inpolicy_footer--bottomside a {
+    @apply text-[14px];
+  }
+  .inpolicy_footer--rightside h3 {
+    @apply font-inter font-medium text-white text-lg mb-5;
+  }
 }
 
 @theme inline {
@@ -87,7 +97,8 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-yellow: #f8bc2f;
-
+  --color-grey: #bfbebe;
+  --color-drkgreen: #2a3839;
   --font-sans: var(--font-archivo);
   --font-mono: var(--font-mono);
   --font-serif: var(--font-instrument-serif);
@@ -217,7 +228,18 @@ body {
   background-blend-mode: screen;
   z-index: -1;
 }
-
+/*footer*/
+p.inpolicy_footer--bigText {
+  letter-spacing: -30px;
+  height: 300px;
+  transform: translate(-40px, -100px);
+}
+p.inpolicy_footer--bigText span:nth-child(1) {
+  background-image: linear-gradient(#e0dbff 75%, #e0dbff 0%);
+}
+p.inpolicy_footer--bigText span:nth-child(2) {
+  background-image: linear-gradient(90deg, #e0dbff 0%, #ffc1f2 100%);
+}
 @media (min-width: 1650px) {
   .product-policy::after {
     left: 15%;
