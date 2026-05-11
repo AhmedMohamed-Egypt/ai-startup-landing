@@ -3,7 +3,8 @@ import ButtonCta from "../components/buttonCta";
 
 export default function PolicyAgents() {
   return (
-    <section className="policyAgents pt-62.5 relative   after:content-['']   after:absolute after:top-0      after:bottom-0   after:w-full   after:bg-[url('/mask-group.svg')]   after:bg-no-repeat        after:-z-10">
+    <section className="policyAgents pt-62.5 relative   after:content-['']   after:absolute after:top-0      after:bottom-0   after:w-full   after:bg-[url('/Mask-group-tiny.png')]   after:bg-no-repeat        after:-z-10">
+      <span></span>
       <div className="w-(--container) mx-auto">
         <h2 className="headingh2 text-center policyAgents--headingh2 ">
           <span className="common-txt-gradient">InPolicy </span>
@@ -82,17 +83,24 @@ export default function PolicyAgents() {
                 <span>enforce them.</span>
               </h2>
               <h6 className="font-inter font-light text-heading28 mb-6 leading-tight">
-                InPolicy is for the lawyers, the marketing team, compliance leaders, anyone on the hook for making sure people and agents say 
-                <b className="font-extrabold block">the right thing, at the right time, the right way.  </b>
+                InPolicy is for the lawyers, the marketing team, compliance
+                leaders, anyone on the hook for making sure people and agents
+                say
+                <b className="font-extrabold block">
+                  the right thing, at the right time, the right way.
+                </b>
               </h6>
               <h5 className="font-manrope font-medium text-xl">
-                We’re building the infrastructure that gives AI agents the context to act responsibly inside a real business. Your policies, your regulatory environment, your risk posture, available at inference time, enforced in real time.
+                We’re building the infrastructure that gives AI agents the
+                context to act responsibly inside a real business. Your
+                policies, your regulatory environment, your risk posture,
+                available at inference time, enforced in real time.
               </h5>
               <ButtonCta classBtn="!border-2 !border-black !px-9 !py-[9px] mt-10 ">
-                  <img src="/arrow-btn.svg" alt="Deploy" />
-          <p className="ml-2  capitalize   first-letter:capitalize text-base">
-            Get started on InPolicy
-          </p>
+                <img src="/arrow-btn.svg" alt="Deploy" />
+                <p className="ml-2  capitalize   first-letter:capitalize text-base">
+                  Get started on InPolicy
+                </p>
               </ButtonCta>
             </div>
           </div>

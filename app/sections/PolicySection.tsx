@@ -68,7 +68,7 @@ export default function PolicySection() {
      <ButtonCta classBtn={"!border-2 !border-black !px-9 !py-[9px] mt-10 mx-auto"}>
   <img src="/arrow-btn.svg" alt="Deploy" />
           <p className="ml-2  lowercase first-letter:capitalize text-base">
-            How we’re solving this
+            How we’re solving this.
           </p>
               </ButtonCta>
             </div>

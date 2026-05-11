@@ -1,3 +1,4 @@
+import Footer from "./sections/Footer";
 import Hero from "./sections/Hero";
 import HumanSection from "./sections/HumanSection";
 import PolicyAgents from "./sections/PolicyAgents";
@@ -15,6 +16,7 @@ export default function Home() {
       <ProductPolicy/>
       <PrivateCorrections/>
       <PolicyAgents/>
+      <Footer/>
     </main>
   );
 }

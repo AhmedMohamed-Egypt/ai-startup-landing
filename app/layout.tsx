@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
-import { Archivo, Geist_Mono, Instrument_Serif ,Manrope,Inter  } from "next/font/google";
+import {
+  Archivo,
+  Geist_Mono,
+  Instrument_Serif,
+  Manrope,
+  Inter,
+} from "next/font/google";
 import "./globals.css";
 
 const archivo = Archivo({
@@ -15,7 +21,7 @@ const geistMono = Geist_Mono({
 const instrumentSerif = Instrument_Serif({
   subsets: ["latin"],
   weight: ["400"], // only available weight
-  variable: "--font-instrument-serif"
+  variable: "--font-instrument-serif",
 });
 const manrope = Manrope({
   subsets: ["latin"],
@@ -24,7 +30,7 @@ const manrope = Manrope({
 });
 const inter = Inter({
   subsets: ["latin"],
-  weight: ["300","400", "500", "600", "700"],
+  weight: ["300", "400", "500", "600", "700"],
   variable: "--font-inter",
 });
 
@@ -43,7 +49,9 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${manrope.variable}  ${archivo.variable} ${geistMono.variable} ${instrumentSerif.variable} h-full antialiased`}
     >
-      <body className="overflow-x-hidden min-h-full flex flex-col font-sans bg-(--color-bg-primary) ">{children}</body>
+      <body className="overflow-x-hidden min-h-full flex flex-col font-sans bg-(--color-bg-primary) ">
+        {children}
+      </body>
     </html>
   );
 }
