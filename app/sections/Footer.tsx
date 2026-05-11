@@ -3,7 +3,7 @@ import React from "react";
 export default function Footer() {
   return (
     <section className="inpolicy_footer bg-black pt-20 overflow-hidden">
-      <div className="w-(--container) mx-auto px-10">
+      <div className="w-(--container) mx-auto px-10 relative z-50">
         <div className="flex justify-between pb-10">
           <div className="inpolicy_footer--leftside w-[440px]">
             <img width="125" height="42" src="/Logo.svg" alt="logo" />
@@ -92,11 +92,11 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex justify-between inpolicy_footer--bottomside border border-drkgreen border-r-0 border-l-0 pt-5">
+        <div className="flex justify-between inpolicy_footer--bottomside border border-drkgreen border-r-0 border-l-0 py-6">
             <div>
                 <ul className="flex items-center">
-                    <li><a href="#" className="">Terms</a></li>
-                    <li className="ml-6 "><a href="#">Privacy</a></li>
+                    <li><a href="#" className="mb-0">Terms</a></li>
+                    <li className="ml-6 "><a className="mb-0" href="#">Privacy</a></li>
                 </ul>
             </div>
             <p className="font-inter text-[14px] text-grey">© InPolicy LLC 2026 All rights reserved.</p>
