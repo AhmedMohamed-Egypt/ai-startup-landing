@@ -102,7 +102,7 @@ export default function Footer() {
             <p className="font-inter text-[14px] text-grey">© InPolicy LLC 2026 All rights reserved.</p>
         </div>
       </div>
-      <p className="font-inter font-medium text-[470px] inpolicy_footer--bigText">
+      <p className="font-inter font-medium text-[470px] inpolicy_footer--bigText text-center">
         <span className="common-txt-gradient">In</span>
         <span className="common-txt-gradient">Policy</span>
       </p>
