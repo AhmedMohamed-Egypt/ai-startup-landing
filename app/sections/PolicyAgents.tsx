@@ -3,7 +3,7 @@ import ButtonCta from "../components/buttonCta";
 
 export default function PolicyAgents() {
   return (
-    <section className="policyAgents pt-62.5 relative   after:content-['']   after:absolute after:top-0      after:bottom-0   after:w-full   after:bg-[url('/Mask-group-tiny.png')]   after:bg-no-repeat        after:-z-10">
+    <section className="policyAgents pt-62.5 relative   after:content-['']   after:absolute after:top-0      after:bottom-0   after:w-full   after:bg-no-repeat   after:-z-10">
       <span></span>
       <div className="w-(--container) mx-auto">
         <h2 className="headingh2 text-center policyAgents--headingh2 ">
