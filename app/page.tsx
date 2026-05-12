@@ -10,15 +10,14 @@ export default function Home() {
   return (
     <main>
       <Hero />
+       <HumanSection />
+       <PolicySection />
+         <ProductPolicy/>
+         <PrivateCorrections/>
+          <PolicyAgents/>
+           <Footer/>
       
-      <div className="hidden">
-        <HumanSection />
-      <PolicySection />
-      <ProductPolicy/>
-      <PrivateCorrections/>
-      <PolicyAgents/>
-      <Footer/>
-      </div>
+    
     </main>
   );
 }

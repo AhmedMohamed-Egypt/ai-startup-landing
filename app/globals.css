@@ -78,7 +78,7 @@
     background-image: linear-gradient(360deg, #000000 8%, #c383b5 100%);
   }
   h2.headingh2 {
-    @apply text-6xl font-serif font-normal;
+    @apply font-serif font-normal text-5xl  lg:text-6xl;
   }
   .inpolicy_footer--rightside a,
   .inpolicy_footer--bottomside a {
@@ -89,6 +89,9 @@
   }
   .inpolicy_footer--rightside h3 {
     @apply font-inter font-medium text-white text-lg mb-5;
+  }
+  .text-heading3 {
+    @apply lg:text-[40px] md:text-[30px] sm:text-[28px] text-[24px];
   }
 }
 
@@ -104,7 +107,7 @@
   --font-serif: var(--font-instrument-serif);
   --font-manrope: var(--font-manrope), system-ui, sans-serif;
   --font-inter: var(--font-inter), system-ui, sans-serif;
-  --text-heading3: 40px;
+
   --text-heading28: 28px;
   --text-heading68: 68px;
 }
@@ -167,6 +170,42 @@ body {
 .humanSection__parent--first img:nth-child(2) {
   transform: translate(-120px, -150px);
 }
+@media (max-width: 990px) {
+  .humanSection__parent--first img:nth-child(2) {
+    transform: translate(50px, -150px);
+  }
+}
+@media (max-width: 810px) {
+  .humanSection__parent--first img:nth-child(2) {
+    transform: translate(10px, -150px);
+  }
+  .humanSection {
+    padding-top: 50px;
+  }
+  .humanSection__parent {
+    flex-direction: column;
+  }
+  .humanSection__parent--second {
+    order: 0;
+    align-items: center;
+  }
+  .humanSection__parent--second h2 span {
+    text-align: center;
+  }
+  .humanSection__parent--first {
+    order: 5;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .humanSection__parent--second--contentTxt {
+    width: 90%;
+    margin: auto;
+  }
+  h3.text-heading3 {
+    align-items: center;
+  }
+}
+
 .humanSection__parent--second--text {
   width: 70%;
 }
@@ -214,9 +253,11 @@ body {
 .product-policy__rightside--colTwo h2 span:nth-child(3) {
   background-image: linear-gradient(0deg, #8e6400 10%, #c383b5 60%);
 }
+/*responsive */
+.product-policy:after {
+}
 /*private correction*/
 .private-correction--leftside {
-  max-width: 375px;
 }
 .private-correction--right img:nth-child(1) {
   transform: translate(40px, 90px);
@@ -248,9 +289,6 @@ body {
 }
 /*footer*/
 p.inpolicy_footer--bigText {
-  letter-spacing: -30px;
-  height: 300px;
-  transform: translate(-40px, -100px);
 }
 p.inpolicy_footer--bigText span:nth-child(1) {
   background-image: linear-gradient(#e0dbff 75%, #e0dbff 0%);
